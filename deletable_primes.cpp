@@ -10,3 +10,15 @@
  * Implementation of deletable_primes.h.
  * ----------------------------------------------------------
  */
+
+unsigned long remove_digit(int index, unsigned long n){
+    return 0;
+}
+
+int get_ways(unsigned long p){
+    return 0;
+}
+
+bool is_prime(unsigned long p){
+    return false;
+}
