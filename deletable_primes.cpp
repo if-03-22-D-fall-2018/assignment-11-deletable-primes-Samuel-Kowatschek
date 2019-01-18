@@ -16,7 +16,9 @@
 
 bool is_prime_number(unsigned long number)
 {
-    if (number == 1) return false;
+    if (number == 1) {
+        return false;
+    }
 
     for (int i = 2; i <= sqrt(number); i++)
     {
@@ -27,21 +29,21 @@ bool is_prime_number(unsigned long number)
 
 int get_length(unsigned long number)
 {
-    int length = 0;
-    while (number != 0)
-    {
-        number /= 10;
-        length++;
+    int len = 0;
+    while(number!=0){
+        number/=10;
+        len++;
     }
-    return length;
+    return len;
 }
 
 unsigned long remove_digit(int i, unsigned long number)
 {
-    unsigned long left = 0
+    unsigned long left = 0;
     unsigned long right = 0;
     
-    if (i == 0) return number / 10;
+    if (i == 0){
+         return number / 10;}
 
     left  = number / pow(10, i + 1);
     right = number % (unsigned long) pow(10, i);
